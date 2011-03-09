@@ -3,87 +3,44 @@
 /* ---------- Base styles ---------- */
 
 body {
-    background: #E5E6E6;
-    color: #808080;
-    font: 12px verdana, arial, elvetica, sans-serif;
-    /*letter-spacing: 1px;*/
-    width: 960px;
+    background: #EEEEEE;
+    font: 12px Verdana, Arial, Helvetica, Sans-serif;
+    width: 980px;
     margin: 0 auto;
 }
 
 a {
-    color: #58585A;
+    color: #CC6600;
     text-decoration: none;
 }
 
 a:hover {
-    color: #00ADF4;
-    text-decoration: none;
-}
-
-a.importante {
-    background-color: #FF4400;
-    color: #FFFFFF;
-    font-size: 1.5em;
-    letter-spacing: 3px;
-    margin: 10px 0;
-    padding: 5px 15px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-a.importante:hover {
-    background-color: #FF8F00;
+    font-weight: normal;
+    text-decoration: underline;
 }
 
 hr, .separator {
-    border-color: #BFBFBF transparent #FFF;
-    border-style: dotted;
+    border-color: #E1E1E1 transparent #FFF;
+    border-style: solid;
     border-width: 1px 0;
 }
 
 #wrapper {
-    background: #FFFFFF;
     /*
+        background: #FFFFFF;
 	margin: 0 auto;
 	max-width: 90%;
 	min-width: 960px;
     */
     position: relative;
-    padding: 0 20px;
+}
+
+.main-content {
+    background: #FFFFFF;
 }
 
 .ie6 #wrapper {
-    /*width: 90%;*/
-}
-
-h1.importante {
-    color: #00ADF4;
-    font-size: 3em;
-    font-weight: normal;
-    letter-spacing: 4px;
-    margin: 0 0 20px 0;
-}
-
-h2.importante {
-    color: #58585A;
-    font-size: 1.8em;
-    font-weight: normal;
-    letter-spacing: 2px;
-    margin: 0 0 10px 0;
-}
-
-h3.importante {
-    color: #58585A;
-    font-size: 1.5em;
-    font-weight: normal;
-    letter-spacing: 2px;
-    margin: 0 0 10px 0;
-}
-
-h1, h2, h3 {
-    letter-spacing: 1px;
+    width: 90%;
 }
 
 #banner {
@@ -93,8 +50,7 @@ h1, h2, h3 {
 
 #banner .company-title {
     float: none;
-    /*margin: 15px 0 0;*/
-    margin: 0;
+    margin: 15px 0 0;
     position: static;
 }
 
@@ -107,8 +63,8 @@ body #banner .logo a {
 }
 
 .logo .current-community {
-    background: #FFFFFF url(../images/dock/my_places_public.png) no-repeat 15px 50%;
-    color: #241F20;
+    background: #A6AFBE url(../images/dock/my_places_public.png) no-repeat 15px 50%;
+    color: #FFF;
     display: block;
     float: right;
     font-size: 0.8em;
@@ -152,20 +108,13 @@ body #banner .logo a {
 /* ---------- Main navigation ---------- */
 
 #navigation {
-    /*background: #414445 url(../images/navigation/bg.png) repeat-x 0 0;*/
+    background: #414445 url(../images/navigation/bg.png) repeat-x 0 0;
     clear: both;
-    /*
-	margin: 0 auto 5px;
-	min-height: 2.2em;
-	padding: 0 5px;
-	position: relative;
-	z-index: 1;
-    */
-    position: absolute;
-    right:18px;
-    top:10px;
-    letter-spacing: 1px;
-
+    margin: 0 auto 5px;
+    min-height: 2.2em;
+    padding: 0 5px;
+    position: relative;
+    z-index: 1;
 }
 
 #navigation ul {
@@ -191,23 +140,14 @@ body #banner .logo a {
 #navigation li {
     position: relative;
     vertical-align: top;
-    padding: 0 5px;
-    border-right: 1px solid #58585A;
-}
-
-#navigation li:last-child {
-    border: 0 none;
-    padding: 0 0 0 5px;
 }
 
 #navigation a {
-    /*
-    color: #58585A;
-	font-size: 1.1em;
-	margin: 0 1px;
-	padding: 3px 15px;
-	font-weight: bold;
-    */
+    color: #FFF;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 1px;
+    padding: 3px 15px;
     text-decoration: none;
 }
 
@@ -220,14 +160,10 @@ body #banner .logo a {
 }
 
 #navigation .selected a, #navigation a:hover, #navigation a:focus, #navigation .child-menu li a, #navigation .aui-dd-dragging, .lfr-navigation-proxy {
-    /*
-	background: #313334;
-	color: #FFF;
-	outline: 0;
-	text-shadow: -1px -1px #000;
-    color: #241F20;
-    */
-    font-weight: normal;
+    background: #313334;
+    color: #FFF;
+    outline: 0;
+    text-shadow: -1px -1px #000;
 }
 
 #navigation li:hover .child-menu {
@@ -282,21 +218,24 @@ body #banner .logo a {
 
 .portlet {
     background-color: #FFFFFF;
-    border: 1px solid #C8C9CA;
+    border: 1px solid #E1E1E1;
     margin: 0 0 10px;
     padding: 3px;
     text-align: left;
 }
 
 .portlet-topper {
-    background: #D4D4D4 url(../images/portlet/header_bg.png) repeat-x 0 0;
-    border: 1px solid;
-    border-color: #C8C9CA #9E9E9E #9E9E9E #C8C9CA;
-    font-size: 1.1em;
+    position: relative;
+    /*
+	background: #D4D4D4 url(../images/portlet/header_bg.png) repeat-x 0 0;
+	border: 1px solid;
+	border-color: #C8C9CA #9E9E9E #9E9E9E #C8C9CA;
+	font-size: 1.1em;
+    */
 }
 
 .portlet-title {
-    color: #222;
+    color: #CC6600;
     float: none;
     font-weight: bold;
     min-width: 50%;
@@ -417,11 +356,9 @@ body #banner .logo a {
 }
 
 #navigation li.selected a {
-    /*
-	-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
-	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
-    */
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .aui-combobox .aui-toolbar-first {
