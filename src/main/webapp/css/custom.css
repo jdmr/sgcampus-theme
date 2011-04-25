@@ -15,7 +15,6 @@ a {
 }
 
 a:hover {
-    font-weight: normal;
     text-decoration: underline;
 }
 
@@ -147,7 +146,7 @@ body #banner .logo a {
     font-size: 1.1em;
     font-weight: bold;
     margin: 0 1px;
-    padding: 3px 15px;
+    padding: 3px 45px;
     text-decoration: none;
 }
 
@@ -368,4 +367,11 @@ body #banner .logo a {
     -webkit-border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+/* ---- SGCAMPUS ---- */
+a.sign_in_button {
+    padding: 5px 15px;
+    color: #FFFFFF;
+    background: #CC6600;
 }
