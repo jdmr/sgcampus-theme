@@ -23,6 +23,10 @@ a:hover {
     font-weight: normal;
 }
 
+.dockbar a:hover {
+    font-weight: bold;
+}
+
 hr, .separator {
     border-color: #E1E1E1 transparent #FFF;
     border-style: solid;
@@ -151,6 +155,10 @@ body #banner .logo a {
     width: 192px;
     text-align: center;
     background-color: #CC6600;
+}
+
+#navigation .selected li {
+    background-color: #F9A433;
 }
 
 #navigation a {
@@ -403,4 +411,17 @@ a.sign_in_button {
     padding: 5px 15px;
     color: #FFFFFF;
     background: #CC6600;
+}
+
+.portlet-borderless-container {
+    background-color: #FFFFFF;
+    border: 1px solid #CC6600; 
+    padding: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #CC6600;
 }
