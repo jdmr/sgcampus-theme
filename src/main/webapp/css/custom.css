@@ -9,6 +9,10 @@ body {
     margin: 0 auto;
 }
 
+.taglib-icon .taglib-text {
+    text-decoration: none;
+}
+
 a {
     color: #CC6600;
     text-decoration: none;
@@ -16,6 +20,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    font-weight: normal;
 }
 
 hr, .separator {
@@ -107,11 +112,11 @@ body #banner .logo a {
 /* ---------- Main navigation ---------- */
 
 #navigation {
-    background: #414445 url(../images/navigation/bg.png) repeat-x 0 0;
+    /*background: #414445 url(../images/navigation/bg.png) repeat-x 0 0;*/
     clear: both;
     margin: 0 auto 5px;
-    min-height: 2.2em;
-    padding: 0 5px;
+    /*min-height: 2.2em;
+    padding: 0 5px;*/
     position: relative;
     z-index: 1;
 }
@@ -119,15 +124,19 @@ body #banner .logo a {
 #navigation ul {
     list-style: none;
     margin: 0;
-    padding: 3px;
+    /*padding: 3px;*/
 }
 
 .ie7 #navigation ul {
-    padding: 2px;
+    /*padding: 2px;*/
 }
 
 #navigation li, #navigation a {
     display: inline-block;
+}
+
+#navigation li:hover {
+    background-color: #F9A433;
 }
 
 .ie6 #navigation li, .ie7 #navigation li, .ie6 #navigation a, .ie7 #navigation a {
@@ -138,20 +147,23 @@ body #banner .logo a {
 
 #navigation li {
     position: relative;
-    vertical-align: top;
+    vertical-align: middle;
+    width: 192px;
+    text-align: center;
+    background-color: #CC6600;
 }
 
 #navigation a {
     color: #FFF;
     font-size: 1.1em;
     font-weight: bold;
-    margin: 0 1px;
-    padding: 3px 45px;
+    /*margin: 0 1px;*/
+    padding: 3px 65px;
     text-decoration: none;
 }
 
 .ie7 #navigation a {
-    padding: 4px 15px;
+    padding: 4px 35px;
 }
 
 #navigation .aui-dd-drop a {
@@ -159,14 +171,13 @@ body #banner .logo a {
 }
 
 #navigation .selected a, #navigation a:hover, #navigation a:focus, #navigation .child-menu li a, #navigation .aui-dd-dragging, .lfr-navigation-proxy {
-    background: #313334;
-    color: #FFF;
+    /*color: #FFF;*/
     outline: 0;
     text-shadow: -1px -1px #000;
 }
 
 #navigation li:hover .child-menu {
-    background: #1E2529;
+    background: #CC6600;
     display: block;
     position: absolute;
     width: 200px;
@@ -174,7 +185,7 @@ body #banner .logo a {
 }
 
 .ie6 #navigation li.hover .child-menu {
-    background: #1E2529;
+    background: #CC6600;
     display: block;
     position: absolute;
     width: 200px;
@@ -206,18 +217,19 @@ body #banner .logo a {
 }
 
 #navigation .child-menu li a:hover {
-    background-color: #020509;
+    background-color: #F9A433;
 }
 
 #navigation .child-menu .selected a {
-    background: #020509 url(../images/navigation/bullet_selected.png) no-repeat 5px 50%;
+    /*background: #020509 url(../images/navigation/bullet_selected.png) no-repeat 5px 50%;*/
+    background-color: #F9A433;
 }
 
 /* ---------- Portlet wrapper and icons ---------- */
 
 .portlet {
     background-color: #FFFFFF;
-    border: 1px solid #E1E1E1;
+    border: 1px solid #CC6600;
     margin: 0 0 10px;
     padding: 3px;
     text-align: left;
@@ -288,6 +300,21 @@ body #banner .logo a {
     text-align: right;
 }
 
+#footer hr {
+    color: #CC6600;
+    background-color: #CC6600;
+    border: 2px;
+    height: 2px;
+}
+
+#footer h1 {
+    font-size: 12px;
+}
+
+#footer a:hover {
+    font-weight: normal;
+}
+
 /* ---------- Hudcrumbs ---------- */
 
 .lfr-hudcrumbs {
@@ -354,11 +381,13 @@ body #banner .logo a {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5), 1px 1px 0 #FFF;
 }
 
+/*
 #navigation li.selected a {
     -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
     -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
 }
+*/
 
 .aui-combobox .aui-toolbar-first {
     -moz-border-radius-topleft: 0;

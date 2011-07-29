@@ -74,9 +74,38 @@
 	</div>
 
 	<footer id="footer" role="contentinfo">
-		<p class="powered-by">
-			#language("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
-		</p>
+                <hr />
+                <div style="float:right;width:300px;">
+                    <p class="powered-by">
+                            #language("powered-by") <a href="http://www.sg.com.mx" rel="external">Software Gur&uacute;</a>
+                    </p>
+                    <p class="powered-by">
+                            <a href="http://www.sistemashumanos.com" rel="external">Sistemas Humanos</a>
+                    </p>
+                    <p class="powered-by">
+                            <a href="http://www.um.edu.mx" rel="external">Universidad de Montemorelos</a>
+                    </p>
+                </div>
+                <div style="float:left;width:200px;text-align:left;">
+                    <h1>Acerca de SG Campus</h1>
+                    #foreach ($nav_item in $nav_items)
+                        <p>
+                                    <a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $htmlUtil.escape($nav_item.getName())</span></a>
+                        </p>
+                    #end
+                </div>
+                <div style="float:left;width:200px;text-align:left;">
+                    <h1>Redes Sociales</h1>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Linked In</p>
+                </div>
+                <div style="float:left;width:200px;text-align:left;">
+                    <h1>Ayuda</h1>
+                    <p>Contacto</p>
+                    <p>Soporte</p>
+                    <p>Requerimientos T&eacute;cnicos</p>
+                </div>
 	</footer>
 </div>
 
