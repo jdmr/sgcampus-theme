@@ -12,8 +12,8 @@
 
 <body class="$css_class">
 
-#if($is_signed_in)
-	#dockbar()
+#if ($permissionChecker.isOmniadmin())
+    #dockbar()
 #end
 
 <div id="wrapper">
@@ -40,6 +40,18 @@
 
 		#if(!$is_signed_in)
 			<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+                #else
+                        <span id="salir">
+                            <a href="$my_account_url" >
+                                <img alt="$user_name" src="$portrait_url" style="height:20px;"/>
+                            </a>
+                            <a href="$my_account_url" style="vertical-align: super;" >
+                                $user_name
+                            </a>
+                            <span class="sign-out" style="vertical-align: super;">
+                                (<a href="$sign_out_url">$sign_out_text</a>)
+                            </span>
+                        </span>
 		#end
 
 		#if ($update_available_url)

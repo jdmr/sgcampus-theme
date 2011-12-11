@@ -1,0 +1,16 @@
+#*
+This file allows you to override and define new Velocity variables.
+*#
+#if($is_signed_in)
+
+    #if($is_female)
+        #set($gender = "female")
+    #else
+        #set($gender = "male")
+    #end
+    #set($pathImage = $themeDisplay.getPathImage())
+    #set($portraitId = $user.getPortraitId())
+    #set($portraitToken = $imageToken.getToken($user.getPortraitId()))
+    #set($rawPortraitUrl = "$pathImage/user_${gender}_portrait?img_id=$portraitId&t=$portraitToken")
+    #set($portrait_url = $htmlUtil.escape($rawPortraitUrl))
+#end

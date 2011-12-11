@@ -94,7 +94,14 @@ body #banner .logo a {
     padding: 5px 5px 5px 25px;
     position: absolute;
     right: 0;
-    top: 1.4em;
+    top: 105px;
+}
+
+#salir {
+    padding: 5px 5px 5px 25px;
+    position: absolute;
+    right: 0;
+    top: 102px;
 }
 
 .guest-community .logo .current-community {

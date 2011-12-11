@@ -1,0 +1,16 @@
+<div class="dockbar">
+    <ul class="aui-toolbar user-toolbar">
+        <li class="user-avatar">
+            <span class="user-links">
+            #if ($is_signed_in)
+                <a href="$my_account_url">$user_name</a>
+                <span class="sign-out">
+                    (<a href="$sign_out_url">$sign_out_text</a>)
+                </span>
+            #else
+                <a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+            #end
+            </span>
+        </li>
+    </ul>
+</div>
