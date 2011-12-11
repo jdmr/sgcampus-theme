@@ -87,30 +87,32 @@
 
 	<footer id="footer" role="contentinfo">
                 <hr />
-                <div style="float:right;width:300px;">
-                    <p class="powered-by">
-                            <a href="http://www.sg.com.mx" rel="external"><img src="/sgcampus-theme/images/sg.JPG" alt="Sofware Gur&uacute;"/></a>
-                    </p>
-                </div>
-                <div style="float:left;width:200px;text-align:left;">
-                    <h1><a href="/acerca">Acerca de SG Campus</a></h1>
-                    #foreach ($nav_item in $nav_items)
-                        <p>
-                                    <a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $htmlUtil.escape($nav_item.getName())</span></a>
+                <div style="padding-bottom:150px;">
+                    <div style="float:right;width:300px;">
+                        <p class="powered-by">
+                                <a href="http://www.sg.com.mx" rel="external"><img src="/sgcampus-theme/images/sg.JPG" alt="Sofware Gur&uacute;"/></a>
                         </p>
-                    #end
-                </div>
-                <div style="float:left;width:200px;text-align:left;">
-                    <h1>Redes Sociales</h1>
-                    <p><a href="http://www.facebook.com/sgcampus" target="_blank">Facebook</a></p>
-                    <p><a href="http://twitter.com/#!/sgcampus" target="_blank">Twitter</a></p>
-                    <p><a href="http://www.linkedin.com/groups/SG-Campus-2572150?mostPopular=&gid=2572150" target="_blank">LinkedIn</a></p>
-                </div>
-                <div style="float:left;width:200px;text-align:left;">
-                    <h1>Ayuda</h1>
-                    <p><a href="/contacto">Contacto</a></p>
-                    <p><a href="/soporte">Soporte</a></p>
-                    <p><a href="/requerimientos">Requerimientos T&eacute;cnicos</a></p>
+                    </div>
+                    <div style="float:left;width:200px;text-align:left;">
+                        <h1><a href="/acerca">Acerca de SG Campus</a></h1>
+                        #foreach ($nav_item in $nav_items)
+                            <p>
+                                        <a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $htmlUtil.escape($nav_item.getName())</span></a>
+                            </p>
+                        #end
+                    </div>
+                    <div style="float:left;width:200px;text-align:left;">
+                        <h1>Redes Sociales</h1>
+                        <p><a href="http://www.facebook.com/sgcampus" target="_blank">Facebook</a></p>
+                        <p><a href="http://twitter.com/#!/sgcampus" target="_blank">Twitter</a></p>
+                        <p><a href="http://www.linkedin.com/groups/SG-Campus-2572150?mostPopular=&gid=2572150" target="_blank">LinkedIn</a></p>
+                    </div>
+                    <div style="float:left;width:200px;text-align:left;">
+                        <h1>Ayuda</h1>
+                        <p><a href="/contacto">Contacto</a></p>
+                        <p><a href="/soporte">Soporte</a></p>
+                        <p><a href="/requerimientos">Requerimientos T&eacute;cnicos</a></p>
+                    </div>
                 </div>
 	</footer>
 </div>
