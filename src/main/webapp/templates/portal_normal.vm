@@ -90,14 +90,14 @@
                 <div style="padding-bottom:150px;">
                     <div style="float:right;width:300px;">
                         <p class="powered-by">
-                                <a href="http://www.sg.com.mx" rel="external"><img src="/sgcampus-theme/images/sg.JPG" alt="Sofware Gur&uacute;"/></a>
+                            <a href="http://www.sg.com.mx" rel="external"><img src="/sgcampus-theme/images/sg.JPG" alt="Sofware Gur&uacute;"/></a>
                         </p>
                     </div>
                     <div style="float:left;width:200px;text-align:left;">
                         <h1><a href="/acerca">Acerca de SG Campus</a></h1>
                         #foreach ($nav_item in $nav_items)
                             <p>
-                                        <a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $htmlUtil.escape($nav_item.getName())</span></a>
+                                <a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $htmlUtil.escape($nav_item.getName())</span></a>
                             </p>
                         #end
                     </div>
